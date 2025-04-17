@@ -1,0 +1,7 @@
+@media screen and (max-width: 480px) {
+
+    .main-content figure, .main-content-info img, .about-content img, .app-content img {
+        display: none;
+    }
+
+}
