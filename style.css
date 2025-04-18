@@ -20,13 +20,14 @@ body {
     padding: 1rem;
     position: fixed;
     z-index: 1;
+    transition: top 0.3s;
 }
 
 .page-header img {
-    max-height:50px;
-    max-width:50px;
-    height:auto;
-    width:auto;
+    max-height: 50px;
+    max-width: 50px;
+    height: auto;
+    width: auto;
 }
 
 .nav-links {
@@ -46,11 +47,6 @@ body {
 }
 
 /* Conteúdo principal */
-.main-container {
-    display: flex;
-    flex-flow: column wrap;
-}
-
 .main-content {
     padding: 15rem 0 5rem;
     display: flex;
@@ -71,10 +67,10 @@ body {
 }
 
 .main-content-left h1:after {
-    content:attr(data-text);
-	color:darkgreen;
-	transform:translateX(-100%);
-	position:absolute;
+    content: attr(data-text);
+    color: darkgreen;
+    transform: translateX(-100%);
+    position: absolute;
 }
 
 .main-content-info {
@@ -85,30 +81,34 @@ body {
 }
 
 .main-content-info img {
-    max-height:7.8rem;
-    height:auto;
-    width:auto;
+    max-height: 7.8rem;
+    width: auto;
 }
 
 /* Seções sobre o projeto */
-.about-content, .app-content {
+.about-content,
+.app-content {
     padding: 7.5rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.about-content img, .app-content img {
+.about-content img,
+.app-content img {
     margin: 2rem;
 }
 
-.about-igarden, .app-igarden {
+.about-igarden,
+.app-igarden {
     max-width: 700px;
     padding: 1rem;
     align-self: center;
 }
 
-.about-igarden h3, .app-igarden h3, .team-content h3 {
+.about-igarden h3,
+.app-igarden h3,
+.team-content h3 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
@@ -116,7 +116,8 @@ body {
     padding-bottom: 2rem;
 }
 
-.about-igarden p, .app-igarden p {
+.about-igarden p,
+.app-igarden p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -124,10 +125,12 @@ body {
     line-height: 1.5;
 }
 
-.about-igarden p strong, .app-igarden p strong {
+.about-igarden p strong,
+.app-igarden p strong {
     font-weight: 700;
     color: darkgreen;
 }
+
 
 .team-content h3 {
     text-align: center;
@@ -144,14 +147,15 @@ body {
 }
 
 .team-igarden {
-    max-width: 250px;
+    width: 250px;
     display: flex;
     flex-flow: column wrap;
     background-color: #FFFFFF;
     border: #AEEFD2;
     border-width: 2px;
     border-style: solid;
-    border-radius: 5%;
+    border-radius: 20px;
+    align-self: stretch;
 }
 
 .team-igarden img {
@@ -161,10 +165,14 @@ body {
 
 .team-igarden h3 {
     padding: 1rem;
+    color: darkgreen;
 }
 
 .team-igarden p {
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Rodapé da página */

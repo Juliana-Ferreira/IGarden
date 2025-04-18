@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="style.css">
+    
     <title>iGarden - Seu jardim na palma da mão</title>
 </head>
 <body>
-    <header class="page-header">
+    <header class="page-header" id="navbar">
         <img src="IMG/logo.png" alt="Logo iGarden">
 
         <nav class="nav-links">
             <ul class="nav-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#aplicativo">Aplicativo</a></li>
-                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#home" onclick="scrollToCenter(event, 'home')">Home</a></li>
+                <li><a href="#sobre" onclick="scrollToCenter(event, 'sobre')">Sobre</a></li>
+                <li><a href="#aplicativo" onclick="scrollToCenter(event, 'aplicativo')">Aplicativo</a></li>
+                <li><a href="#equipe" onclick="scrollToCenter(event, 'equipe')">Equipe</a></li>
             </ul>
         </nav>
 
@@ -28,7 +29,7 @@
     </header>
 
     <main class="main-container">
-        <section class="main-content">
+        <section class="main-content" id="home">
             <div class="main-content-left">
                 <h1 data-text="iGarden">Seu jardim na palma da mão com iGarden</h1>
 
@@ -88,7 +89,7 @@
                     <img src="IMG/foto_juliana.jpeg" alt="" width="180px">
                     <h3>Juliana Ferreira</h3>
                     <p>
-                        Juliana é a <strong>Consultora de Usabilidade</strong>, responsável pelo planejamento e condução de testes de usabilidade para identificar pontos de melhoria na interface.
+                        Juliana é a <strong>Consultora de Usabilidade</strong>, responsável pelo planejamento e condução de testes de usabilidade para identificar pontos de melhoria na interface. Realiza estudos de campo com usuários atuais ou com potenciais usuários e convida os stakeholders para sessões de brainstorming e entrevistas. É a ponte entre o que a empresa quer e o que o usuário precisa.
                     </p>
                 </div>
     
@@ -112,7 +113,7 @@
                     <img src="IMG/foto_william.jpeg" alt="" width="180px">
                     <h3>William Santos</h3>
                     <p>
-                        William é o <strong>SCRUM MASTER e PRODUCT OWNER</strong> e atua como facilitador do processo ágil, garantindo o cumprimento das práticas do Scrum e a organização das atividades do projeto. Define as prioridades do backlog, comunica-se com os stakeholders e assegura que a equipe esteja alinhada com os objetivos do projeto.
+                        William é o <strong>Srum Master e Product Owner</strong> e atua como facilitador do processo ágil, garantindo o cumprimento das práticas do Scrum e a organização das atividades do projeto. Define as prioridades do backlog, comunica-se com os stakeholders e assegura que a equipe esteja alinhada com os objetivos do projeto.
                     </p>
                 </div>
             </div>
@@ -123,5 +124,6 @@
     <footer class="page-footer">
         <p>Todos os direitos reservados ©iGarden</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
