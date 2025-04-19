@@ -8,4 +8,4 @@ Após baixar a pasta do projeto, basta dar duplo clique no arquivo <em>index.htm
 
 ### :construction: Ferramentas e tecnologias utilizadas
 
-O projeto foi desenvolvido utilizando as linguagens HTML e CSS e a IDE Visual Studio Code.
+O projeto foi desenvolvido utilizando as linguagens HTML, CSS e Javascript e a IDE Visual Studio Code.
